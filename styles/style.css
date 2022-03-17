@@ -58,6 +58,7 @@
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -150,7 +151,7 @@
  }
 
 .table {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: flex;
@@ -227,10 +228,53 @@
   text-decoration: none;
   color: #2f80ed;
 }
+
+.kaufman {
+  background-color: #1f1f1f;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0;
+  overflow: hidden;
+  height: 800px;
+}
+.section-title_theme_dark {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.feynman__subtitle_theme_dark {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
 }
