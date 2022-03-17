@@ -1,6 +1,3 @@
-div, h1{
-  border: 1px solid red;
-}
 
 .page {
   min-width: 1100px;
@@ -10,13 +7,15 @@ div, h1{
 }
 
 .header {
-  display: flex;
   position: relative;
+  display: flex;
+  align-items: center;
   height: 100vh;
   background-color: #f2f2f2;
   min-height: 600px;
   max-height: 756px;
-
+  overflow: hidden;
+  padding-left: 64px;
 }
 
 .logo {
@@ -27,16 +26,14 @@ div, h1{
 }
 
 .logo_place_header {
-  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
   left: 64px;
 }
 
 .header__title {
+  margin: 0;
   width: 730px;
-  align-self: center;
-  margin-left: 64px;
   z-index: 2;
   line-height: 96px;
   font-size: 102px;
@@ -45,16 +42,16 @@ div, h1{
 }
 
 .header__subtitle {
+  margin: 0;
   position: absolute;
-  padding-top: 0;
+  bottom: 30px;
+  left: 64px;
   width: 388px;
-  margin-left: 64px;
-  margin-bottom: 30px;
-  align-self: flex-end;
   z-index: 2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+ 
 }
 
 .header__link {
@@ -62,44 +59,35 @@ div, h1{
 }
 
 .header__main-illustration {
-  position: absolute;
+  margin: 0;
+  padding: 0;
   width: 765px;
   height: 608px;
+  position: absolute;
   right: 0;
   bottom: 0;
   z-index: 1;
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  position: absolute;
+  margin: 0;
   height: 568px;
   width: 568px;
   background: #2f80ed;
+  position: absolute;
+  top: 64px;
   right: 0;
-  margin-top: 64px;
-}
-
-.header__title_remove-margin {
-  margin: 0 auto;
-}
-
-.header__subtitle_remove-margin {
-  margin: 0 auto;
-}
-
-.content {
-  display: flex;
 }
 
 .description {
+  padding-top: 100px;
   display: flex;
   justify-content: center;
-  margin: 100px auto;
 }
 
 .two-columns {
+  width: 80%;
   display: flex;
-  width:80%;
   justify-content: space-between;
 }
 
@@ -117,13 +105,14 @@ div, h1{
 }
 
 .two-columns__paragraph {
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  text-align: start;
 }
 
-.two-columns__paragraph__remove-margin {
+.two-columns__paragraph:last-of-type {
   margin: 0 auto;
 }
 
@@ -132,10 +121,69 @@ div, h1{
   font-size: 24px;
   font-weight: 600;
 }
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  width: 60%;
+  margin: 0 0 20px 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+ .section-subtitle {
+   width: 60%;
+   text-align: center;
+   margin: 0;
+   line-height: 34px;
+   font-size: 24px;
+   font-weight: normal;
+ }
+
+.table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  margin: 60px 0 0 0;
+}
+
+.table__heading {
+  margin: 0 0 20px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.table__text {
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.content {
+  
 }
