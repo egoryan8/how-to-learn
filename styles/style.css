@@ -1,12 +1,12 @@
-
+div, h1{
+  border: 1px solid red;
+}
 
 .page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  min-height: 600px;
-  max-height: 756px;
 }
 
 .header {
@@ -14,7 +14,9 @@
   position: relative;
   height: 100vh;
   background-color: #f2f2f2;
-  
+  min-height: 600px;
+  max-height: 756px;
+
 }
 
 .logo {
@@ -35,11 +37,11 @@
   width: 730px;
   align-self: center;
   margin-left: 64px;
-  z-index: 2; 
+  z-index: 2;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  
+
 }
 
 .header__subtitle {
@@ -60,8 +62,6 @@
 }
 
 .header__main-illustration {
-  background-image: url(../images/header-image.png);
-  background-size: cover;
   position: absolute;
   width: 765px;
   height: 608px;
@@ -123,7 +123,7 @@
   font-weight: normal;
 }
 
-.two-columns__paragraph_last {
+.two-columns__paragraph__remove-margin {
   margin: 0 auto;
 }
 
