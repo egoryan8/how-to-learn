@@ -124,6 +124,60 @@
   font-weight: 700;
 }
 
+.techniques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cards {
+  list-style: none;
+  width: 920px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px 0 0;
+  flex-wrap: wrap;
+  max-width: 240px;
+  box-sizing: border-box;
+}
+
+.cards__item:nth-of-type(3) {
+  margin: 0;
+}
+
+.cards__image {
+  margin: 60px 40px 43px 40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin: 0 0 16px 0;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description {
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
 .digits {
   display: flex;
   flex-direction: column;
