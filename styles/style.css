@@ -189,6 +189,7 @@
 
 .video__iframes {
   margin: 50px 0 0 0;
+  max-height: 266px;
 }
 
 .video__iframe {
@@ -199,6 +200,12 @@
 
 .video__iframe:last-of-type {
   margin: 0;
+}
+
+.oakley {
+  padding-top: 160px;
+  display: flex;
+  justify-content: center;
 }
 
 .digits {
