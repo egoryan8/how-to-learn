@@ -1,3 +1,13 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -69,7 +79,11 @@
   bottom: 0;
   z-index: 1;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}
+
 .header__square-pic {
   margin: 0;
   height: 568px;
