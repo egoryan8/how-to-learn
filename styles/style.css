@@ -178,6 +178,29 @@
   text-align: center;
 }
 
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.video__iframes {
+  margin: 50px 0 0 0;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin: 0 20px 0 0;
+}
+
+.video__iframe:last-of-type {
+  margin: 0;
+}
+
 .digits {
   display: flex;
   flex-direction: column;
