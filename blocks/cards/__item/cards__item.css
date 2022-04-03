@@ -1,0 +1,12 @@
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 0 0;
+    flex-wrap: wrap;
+    max-width: 240px;
+    box-sizing: border-box;
+  }
+
+.cards__item:nth-of-type(3) {
+    margin: 0;
+  }
